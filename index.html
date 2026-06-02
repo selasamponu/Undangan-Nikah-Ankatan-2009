@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>The Royal Wedding of Koa & Ona | Rose Gold & Ivory</title>
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -146,6 +146,37 @@
       border-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 15px 30px rgba(0,0,0,0.2);
       color: #000000;
+    }
+    
+    /* Gaya baru untuk teks undangan (Kepada Yth dan Angkatan) - lebih tebal & rapi */
+    .guest-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      color: #8b4a2a;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+      background: rgba(255, 248, 240, 0.5);
+      display: inline-block;
+      padding: 4px 18px;
+      border-radius: 50px;
+      backdrop-filter: blur(4px);
+    }
+    
+    .angkatan-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      color: #b55a2e;
+      margin-bottom: 15px;
+      background: linear-gradient(135deg, #b55a2e, #d48a5a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: none;
     }
     
     .section-title {
@@ -490,6 +521,7 @@
       .swiper-slide img { height: 280px; }
       .toast-notif { white-space: normal; width: 85%; text-align: center; font-size: 0.8rem; bottom: 95px; }
       .wedding-date { font-size: 1.3rem; }
+      .guest-title, .angkatan-title { font-size: 1rem; }
     }
     
     @media (max-width: 480px) {
@@ -503,6 +535,7 @@
       .time-box { padding: 8px 12px; min-width: 60px; }
       .avatar { width: 100px; height: 100px; }
       .wedding-date { font-size: 1.1rem; }
+      .guest-title, .angkatan-title { font-size: 0.9rem; }
     }
     
     .card-couple .animate-text {
@@ -560,8 +593,12 @@
       <span class="heart-icon"><i class="fas fa-heart"></i></span>
       <img class="cover-photo" src="ona.jpg" alt="Loisa">
     </div>
-    <div class="dear-guest" style="font-size:1.2rem; font-family:'Great Vibes'; font-weight:400; color:#b5673a;">Dear, Keluarga & Sahabat</div>
-    <p class="invitation-text" style="font-family:'Poppins'; font-size:0.95rem;">Dengan sukacita, kami mengundang untuk berbagi kebahagiaan<br>di hari istimewa kami.</p>
+    
+    <!-- PERBAIKAN: Gaya tulisan nama undangan lebih tebal, rapi, dan jelas -->
+    <div class="guest-title">Kepada Yth. Bapak/Ibu/Sahabat:</div>
+    <div class="angkatan-title">✨ Angkatan 2009 ✨</div>
+    
+    <p class="invitation-text" style="font-family:'Poppins'; font-size:0.95rem; font-weight:500; color:#6b3e24;">Dengan sukacita, kami mengundang untuk berbagi kebahagiaan<br>di hari istimewa kami.</p>
     <button class="btn-invite" id="openInviteBtn">Open Invitation</button>
   </div>
 </div>
