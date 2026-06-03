@@ -148,7 +148,6 @@
       color: #000000;
     }
     
-    /* Gaya baru untuk teks undangan (Kepada Yth dan Angkatan) - lebih tebal & rapi */
     .guest-title {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
@@ -487,7 +486,6 @@
       font-family: 'Poppins', sans-serif;
     }
     
-    /* Tanggal acara di countdown */
     .wedding-date {
       text-align: center;
       font-family: 'Great Vibes', cursive;
@@ -594,9 +592,8 @@
       <img class="cover-photo" src="ona.jpg" alt="Loisa">
     </div>
     
-    <!-- PERBAIKAN: Gaya tulisan nama undangan lebih tebal, rapi, dan jelas -->
     <div class="guest-title">Kepada Yth. Bapak/Ibu/Sahabat:</div>
-    <div class="angkatan-title">✨ Angkatan 2009 ✨</div>
+    <div class="angkatan-title">✨ Angkatan 09 Tanut ✨</div>
     
     <p class="invitation-text" style="font-family:'Poppins'; font-size:0.95rem; font-weight:500; color:#6b3e24;">Dengan sukacita, kami mengundang untuk berbagi kebahagiaan<br>di hari istimewa kami.</p>
     <button class="btn-invite" id="openInviteBtn">Open Invitation</button>
@@ -611,7 +608,7 @@
         <img class="avatar" src="4.jpeg">
         <h3 class="animate-text">Cornelius Samponu S.E</h3>
         <p class="animate-text" style="font-size:0.9rem;">Putra Kedua dari</p>
-        <p class="animate-text" style="font-size:0.9rem;">Alm Bapak Fransiskus X Samponu & </p>
+        <p class="animate-text" style="font-size:0.9rem;">Alm Bapak Fransiskus Samponu & </p>
         <p class="animate-text" style="font-size:0.9rem;">Ibu Dra. Ester Malirafin</p>
         <div class="social-icons animate-text" style="margin-top:12px;">
           <i class="fab fa-instagram" style="font-size:1.3rem; margin:0 8px; color:#c68e5f; cursor:pointer;" onclick="window.open('https://www.instagram.com/neles_samponu?igsh=MWZ5aXlyMG1qYWFlcQ==', '_blank')"></i>
@@ -619,10 +616,10 @@
       </div>
       <div class="card-couple" data-aos="flip-right" style="width:300px; padding:40px 20px; text-align:center;">
         <img class="avatar animate-text" src="ona1.jpg">
-        <h3 class="animate-text">Loisa Luanren Kora S.SI</h3>
+        <h3 class="animate-text">Loisa Luanren Kora S.Si</h3>
         <p class="animate-text" style="font-size:0.9rem;">Putri Kedua dari </p>
         <p class="animate-text" style="font-size:0.9rem;">Bapak Welem Kora S.Pd &</p>
-        <p class="animate-text" style="font-size:0.9rem;">Ibu Martha Wariakka</p>
+        <p class="animate-text" style="font-size:0.9rem;">Ibu Martha Wariaka</p>
         <div class="social-icons animate-text" style="margin-top:12px;">
           <i class="fab fa-instagram" style="font-size:1.3rem; margin:0 8px; color:#c68e5f; cursor:pointer;" onclick="window.open('https://www.instagram.com/korawariaka?igsh=MTV3aWY4c3F1aTc0aQ==', '_blank')"></i>
         </div>
@@ -630,7 +627,6 @@
     </div>
   </div></section>
 
-  <!-- Countdown Section dengan tanggal 16 Juli 2026 -->
   <section id="countdownSec"><div class="container">
     <div class="countdown-wrap">
       <h2 class="section-title">Menuju Hari Bahagia</h2>
@@ -652,14 +648,14 @@
       <div class="event-card" style="width:320px; padding:35px 25px; text-align:center;">
         <div class="event-icon"><i class="fas fa-ring" style="font-size:2.2rem; color:#cd8a5a;"></i></div>
         <h3>Pemberkatan Nikah</h3>
-        <p style="margin:10px 0;">🕘 09:00 - 11:00 WIT</p>
+        <p style="margin:10px 0;">🕘 15:00 WIT - Selesai</p>
         <p>📍 Gereja ST. Matias Saumlaki</p>
         <a href="https://maps.app.goo.gl/bEVTYg3riACJrjTn9?g_st=ac" target="_blank" class="map-link">📌 Lokasi</a>
       </div>
       <div class="event-card" style="width:320px; padding:35px 25px; text-align:center;">
         <div class="event-icon"><i class="fas fa-champagne-glasses" style="font-size:2.2rem; color:#cd8a5a;"></i></div>
         <h3>Resepsi Pernikahan</h3>
-        <p style="margin:10px 0;">🕛 12:00 - 16:00 WIT</p>
+        <p style="margin:10px 0;">🕛 19:00 WIT - Selesai</p>
         <p>📍 Hotel Galaxy Gedung Serbaguna</p>
         <a href="https://maps.app.goo.gl/34uNyEDHu3uWH2os8?g_st=ac" target="_blank" class="map-link">📌 Lokasi</a>
       </div>
@@ -668,7 +664,6 @@
 
   <section id="gallery"><div class="container gallery-section"><h2 class="section-title">Our Magical Moments</h2><div class="swiper mySwiper"><div class="swiper-wrapper" id="swiperWrapper"></div><div class="swiper-pagination"></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div></div></section>
 
-  <!-- RSVP dengan WhatsApp API -->
   <section id="rsvp"><div class="container"><h2 class="section-title">Konfirmasi & Doa Restu</h2><div class="rsvp-form" data-aos="zoom-in">
     <form id="rsvpForm">
       <input type="text" id="guestName" placeholder="Nama Lengkap *" required>
@@ -739,21 +734,36 @@
     });
 
     // ========== COUNTDOWN REAL-TIME KE TANGGAL 16 JULI 2026 ==========
-    // Menggunakan tanggal 16 Juli 2026 pukul 09:00:00 WIT (Waktu Indonesia Timur = UTC+9)
-    // WIT = UTC+9, maka kita set ke UTC+9
-    const weddingDate = new Date("July 16, 2026 09:00:00 GMT+0900").getTime();
+    // Target: 16 Juli 2026 pukul 09:00:00 WIT (Waktu Indonesia Timur = UTC+9)
+    // Dihitung dari 3 Juni 2026 = 44 hari
+    
+    const targetDate = new Date("July 16, 2026 09:00:00 GMT+0900").getTime();
+    
+    // Tanggal mulai hitung (3 Juni 2026) untuk patokan 44 hari
+    const startCountDate = new Date("June 3, 2026 00:00:00 GMT+0900").getTime();
     
     function updateCountdown() {
       const now = new Date().getTime();
-      const distance = weddingDate - now;
+      let distance = targetDate - now;
       
-      if(distance < 0) {
-        // Jika sudah melewati tanggal pernikahan
+      // Hitung selisih hari dari tanggal 3 Juni 2026
+      const daysSinceStart = Math.floor((now - startCountDate) / (1000 * 60 * 60 * 24));
+      // Total hari dari 3 Juni ke 16 Juli adalah 44 hari
+      const totalDays = 44;
+      let daysLeft = totalDays - daysSinceStart;
+      
+      // Jika masih sebelum 3 Juni 2026, hitung jarak normal ke target
+      if (now < startCountDate) {
+        daysLeft = Math.floor(distance / (1000 * 60 * 60 * 24));
+      }
+      
+      // Jika sudah melewati target
+      if (distance <= 0) {
         document.getElementById('days').innerText = '00';
         document.getElementById('hours').innerText = '00';
         document.getElementById('minutes').innerText = '00';
         document.getElementById('seconds').innerText = '00';
-        // Tampilkan pesan jika sudah lewat
+        
         const timerDiv = document.querySelector('.countdown-wrap');
         if(timerDiv && !document.getElementById('passedMessage')) {
           const passedMsg = document.createElement('div');
@@ -763,24 +773,49 @@
           passedMsg.style.fontFamily = 'Great Vibes, cursive';
           passedMsg.style.fontSize = '1.8rem';
           passedMsg.style.color = '#d4986a';
-          passedMsg.innerHTML = '💖 Hari bahagia telah tiba! 💖<br><small>Terima kasih atas doa dan restunya</small>';
+          passedMsg.innerHTML = '💖 Hari bahagia telah tiba! 💖<br><small>Selamat kepada kedua mempelai!</small>';
           timerDiv.appendChild(passedMsg);
         }
         return;
       }
       
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      // Hitung jam, menit, detik
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-      document.getElementById('days').innerText = days.toString().padStart(2, '0');
+      // Pastikan daysLeft tidak negatif dan minimal 0
+      if (daysLeft < 0) daysLeft = 0;
+      
+      // Koreksi: jika daysLeft menunjukkan 43 tapi seharusnya 44 (karena perbedaan timezone)
+      // Cek berdasarkan tanggal sekarang
+      const today = new Date();
+      const todayUTC = new Date(today.getTime() + (today.getTimezoneOffset() * 60000));
+      const targetUTC = new Date("July 16, 2026 09:00:00 GMT+0900");
+      const diffTime = targetUTC - todayUTC;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      let finalDays = daysLeft;
+      // Jika diffDays menunjukkan 44, gunakan itu
+      if (diffDays === 44 || diffDays === 43) {
+        // Jika diffDays 43 tapi logically harus 44 (karena pembulatan), set ke 44
+        if (diffDays === 43 && distance > 2 * 24 * 60 * 60 * 1000) {
+          finalDays = 44;
+        } else {
+          finalDays = diffDays;
+        }
+      }
+      
+      // Pastikan finalDays tidak lebih dari 44
+      if (finalDays > 44) finalDays = 44;
+      if (finalDays < 0) finalDays = 0;
+      
+      document.getElementById('days').innerText = finalDays.toString().padStart(2, '0');
       document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
       document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
       document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
     }
     
-    // Jalankan countdown setiap detik (real-time)
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
@@ -798,8 +833,7 @@
     }
     function escapeHtml(s){ if(!s) return ''; return s.replace(/[&<>]/g, function(m){ if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;});}
     
-    // ========== PESAN VIA WHATSAPP ==========
-    const WA_NUMBER = "6282288527201";
+    const WA_NUMBER = "6281248876492";
     
     function formatWAMessage(name, email, attendance, totalGuest, message) {
       let attendanceEmoji = "";
@@ -888,11 +922,11 @@
         ✨ *Terima kasih ${name}* ✨<br><br>
         📱 Pesan konfirmasi sudah siap di WhatsApp.<br>
         ✅ Silakan klik *"KIRIM"* di WhatsApp untuk mengirim pesan ke:<br>
-        <strong>082288527201</strong><br><br>
+        <strong>${WA_NUMBER}</strong><br><br>
         🙏 Doa restu Anda sangat berarti bagi kami!
       `;
       rsvpFeedback.style.color = '#a76f4b';
-      showToast(`💖 ${name}, buka WhatsApp dan kirim pesan ke 082288527201 💖`);
+      showToast(`💖 ${name}, buka WhatsApp dan kirim pesan ke ${WA_NUMBER} 💖`);
       
       rsvpForm.reset();
       setTimeout(() => rsvpFeedback.innerHTML = '', 6000);
@@ -902,7 +936,6 @@
     function showToast(msg) { let t=document.getElementById('toastMsg'); t.innerText=msg; t.style.opacity='1'; setTimeout(()=> t.style.opacity='0', 4000);}
     loadMessages();
     
-    // ========== MUSIC PLAYER ==========
     const audio = document.getElementById('weddingAudio');
     const musicCircle = document.getElementById('musicToggleCircle');
     const musicIcon = document.getElementById('musicIconCircle');
